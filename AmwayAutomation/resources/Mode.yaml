@@ -1,0 +1,4 @@
+EndToEndTest: !!testdata.yaml.ModeDetails {
+     modeName: turbo,
+     LabelToDisplayInMode: Firmware,
+}

@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  Command line test e6df6c2e-cd11-4f4c-8bf1-45d5a1e4c3ca</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test e6df6c2e-cd11-4f4c-8bf1-45d5a1e4c3ca</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 01 12:14:03 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>19 seconds (19464 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>EndToEndTest </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='app.tests.EndToEndTestCases.EndToEndTest()'><b>EndToEndTest</b><br>Test class: app.tests.EndToEndTestCases<br/>
+<a href="#Output-882848553" onClick='toggleBox("Output-882848553", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-882848553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-882848553">
+<a href='./screenshots/EndToEndTest.png'>Screenshot</a><br/>
+</div>
+</td>
+<td><div><pre>Cannot create property=LoginData for JavaBean=testdata.yaml.LoginData@7e6e1793
+ in &apos;reader&apos;, line 1, column 15:
+    EndToEndTest: !!testdata.yaml.LoginData {
+                  ^
+Unable to find property &apos;LoginData&apos; on class: testdata.yaml.LoginData
+ in &apos;reader&apos;, line 2, column 13:
+     LoginData: {
+                ^
+
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:313)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct(Constructor.java:190)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructYamlObject.construct(Constructor.java:346)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:182)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping2ndStep(BaseConstructor.java:373)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:147)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:354)
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:489)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:182)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:127)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:450)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:381)
+	at utils.YamlUtils.loadYaml(Unknown Source)
+	at testdata.yaml.LoginData.fetch(Unknown Source)
+	at app.tests.EndToEndTestCases.EndToEndTest(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.yaml.snakeyaml.error.YAMLException: Unable to find property &apos;LoginData&apos; on class: testdata.yaml.LoginData
+	at org.yaml.snakeyaml.introspector.PropertyUtils.getProperty(PropertyUtils.java:132)
+	at org.yaml.snakeyaml.introspector.PropertyUtils.getProperty(PropertyUtils.java:121)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.getProperty(Constructor.java:323)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:241)
+	... 28 more
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace882848553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace882848553'><pre>Cannot create property=LoginData for JavaBean=testdata.yaml.LoginData@7e6e1793
+ in &apos;reader&apos;, line 1, column 15:
+    EndToEndTest: !!testdata.yaml.LoginData {
+                  ^
+Unable to find property &apos;LoginData&apos; on class: testdata.yaml.LoginData
+ in &apos;reader&apos;, line 2, column 13:
+     LoginData: {
+                ^
+
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:313)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.construct(Constructor.java:190)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructYamlObject.construct(Constructor.java:346)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:182)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping2ndStep(BaseConstructor.java:373)
+	at org.yaml.snakeyaml.constructor.SafeConstructor.constructMapping2ndStep(SafeConstructor.java:147)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructMapping(BaseConstructor.java:354)
+	at org.yaml.snakeyaml.constructor.SafeConstructor$ConstructYamlMap.construct(SafeConstructor.java:489)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructObject(BaseConstructor.java:182)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.constructDocument(BaseConstructor.java:141)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getSingleData(BaseConstructor.java:127)
+	at org.yaml.snakeyaml.Yaml.loadFromReader(Yaml.java:450)
+	at org.yaml.snakeyaml.Yaml.load(Yaml.java:381)
+	at utils.YamlUtils.loadYaml(Unknown Source)
+	at testdata.yaml.LoginData.fetch(Unknown Source)
+	at app.tests.EndToEndTestCases.EndToEndTest(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.yaml.snakeyaml.error.YAMLException: Unable to find property &apos;LoginData&apos; on class: testdata.yaml.LoginData
+	at org.yaml.snakeyaml.introspector.PropertyUtils.getProperty(PropertyUtils.java:132)
+	at org.yaml.snakeyaml.introspector.PropertyUtils.getProperty(PropertyUtils.java:121)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.getProperty(Constructor.java:323)
+	at org.yaml.snakeyaml.constructor.Constructor$ConstructMapping.constructJavaBean2ndStep(Constructor.java:241)
+	... 28 more
+</pre></div></td>
+<td>14</td>
+<td>app.tests.EndToEndTestCases@7d286fb6</td></tr>
+</table><p>
+</body>
+</html>

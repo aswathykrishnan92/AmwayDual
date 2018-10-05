@@ -1,0 +1,15 @@
+selenium.host=@selenium.host@
+selenium.port=@selenium.port@
+browser.name=@browser.name@
+browser.version=@browser.version@
+thread.count=@thread.count@
+testng.package=@testng.package@
+test.url=@test.url@
+testng.group=@testng.group@
+application.type=@application.type@
+application.flow=@application.flow@
+device.name=@device.name@
+platform.version=@platform.version@
+platform.name=@platform.name@
+app.path=@app.path@
+app.package=@app.package@
